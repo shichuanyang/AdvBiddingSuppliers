@@ -6,6 +6,7 @@ Pod::Spec.new do |spec|
   spec.summary      = "A short description of AdvBiddingSuppliers."
 
   spec.description  = <<-DESC
+  bidding 的各渠道
                    DESC
 
   spec.homepage     = "https://github.com/shichuanyang/AdvBiddingSuppliers"
@@ -22,10 +23,9 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "12.0"
 
 
-  spec.source       = { :git => "https://github.com/shichuanyang/AdvBiddingSuppliers.git", :tag => s.version.to_s }
+  spec.source       = { :git => "https://github.com/shichuanyang/AdvBiddingSuppliers.git", :tag => spec.version.to_s }
 
   spec.source_files  = "Classes", "Classes/**/*.{h,m}"
-  spec.exclude_files = "Classes/Exclude"
 
 
   spec.ios.vendored_frameworks = ['Classes/ABUAdAdmobAdapter.framework','Classes/ABUAdBaiduAdapter.framework','Classes/ABUAdCsjAdapter.framework', 'Classes/ABUAdGdtAdapter.framework','Classes/ABUAdKlevinAdapter.framework','Classes/ABUAdMintegralAdapter.framework','Classes/ABUAdUnityAdapter.framework','Classes/ABUVisualDebug.framework','Classes/ABUAdSDK.framework','Classes/ABUAdSigmobAdapter.framework']
