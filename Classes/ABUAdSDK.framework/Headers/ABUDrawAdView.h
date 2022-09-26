@@ -14,7 +14,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class ABUDrawAdsManager, ABURitInfo;
+@class ABUDrawAdsManager, ABURitInfo, ABUVideoAdReporter;
+@class ABUDictionary;
+
 @interface ABUDrawAdView : ABUCanvasView
 /// 广告管理者
 @property (nonatomic, weak, readonly) ABUDrawAdsManager *adManager;
@@ -47,7 +49,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (ABURitInfo *)getCurrentBestEcpmInfo;
 
 /// 广告的扩展信息，可能为nil
-- (NSDictionary *_Nullable)extraData;
+- (ABUDictionary *_Nullable)extraData;
 
 /// 填充后可调用，获取广告中的extra信息。目前只支持穿山甲，并且只支持获取coupon, live_room, product信息。
 - (nullable NSDictionary *)getMediaExtraInfo;
@@ -69,4 +71,12 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)reSizeMediaView;
 
 @end
+
+@interface ABUDrawAdView (Native)
+
+/// 自渲染视频类广告事件上报对象，仅采用自定义视频播放器时需要上报，部分ADN需申请白名单
+@property (nonatomic, strong, readonly) ABUVideoAdReporter *videoAdReporter;
+
+@end
+
 NS_ASSUME_NONNULL_END

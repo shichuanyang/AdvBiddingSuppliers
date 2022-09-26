@@ -93,7 +93,7 @@ extern NSString *const ABUAdLoadingParamSPTolerateTimeout;
 /// 开屏点击区域，NSNumber/NSInteger/ABUSplashButtonType
 extern NSString *const ABUAdLoadingParamSPButtonType;
 
-#pragma mark - Native广告
+#pragma mark - Native/Draw广告
 /// 期望广告图片尺寸，NSValue/CGSize
 extern NSString *const ABUAdLoadingParamNAExpectImageSize;
 

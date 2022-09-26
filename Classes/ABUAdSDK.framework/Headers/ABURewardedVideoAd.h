@@ -86,7 +86,7 @@ NS_ASSUME_NONNULL_BEGIN
  optional
  设定是否静音播放视频，YES = 静音，NO = 非静音
  PS:
- ①仅广点通支持设定mute
+ ①仅gdt、ks、mtg支持设定mute
  ②仅适用于视频播放器设定生效
  重点：请在loadAdData前设置,否则不生效
  */

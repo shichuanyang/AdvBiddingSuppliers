@@ -14,6 +14,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class ABUDictionary;
+
 @class ABUNativeAdsManager,ABURitInfo,ABUVideoAdReporter;
 
 /// native广告视图类
@@ -44,7 +46,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (nullable ABURitInfo *)getShowEcpmInfo;
 
 /// 广告的扩展信息，可能为nil
-- (NSDictionary *_Nullable)extraData;
+- (ABUDictionary *_Nullable)extraData;
 
 /// 填充后可调用，但推荐展示后调用，返回竞价广告的ecpm；当为server bidding ad时访问需要白名单权限；
 - (NSArray<ABURitInfo *> *)multiBiddingEcpmInfos;
