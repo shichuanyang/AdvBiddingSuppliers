@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @class ABUSplashAd;
 @class ABUAdPackage;
+@class ABUDictionary;
 
 /// 开屏广告回调协议
 @protocol ABUSplashAdDelegate <NSObject>
@@ -120,7 +121,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign, readonly) BOOL isReady;
 
 /// 广告的扩展信息，可能为nil
-- (NSDictionary *_Nullable)extraData;
+- (ABUDictionary *_Nullable)extraData;
 
 /// 返回显示广告对应的rit
 - (NSString *)getAdNetworkRitId ABU_DEPRECATED_MSG_ATTRIBUTE("接口即将废弃，请使用`getShowEcpmInfo`代替");
