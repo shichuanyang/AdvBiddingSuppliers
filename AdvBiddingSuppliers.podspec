@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "AdvBiddingSuppliers"
-  spec.version      = "0.0.7"
+  spec.version      = "0.0.8"
   spec.summary      = "A short description of AdvBiddingSuppliers."
 
   spec.description  = <<-DESC
@@ -19,8 +19,8 @@ Pod::Spec.new do |spec|
   spec.author             = { "shichuanyang" => "shicy@bayescom.com" }
 
 
-  spec.ios.deployment_target = '9.0'
-  spec.platform     = :ios, "9.0"
+  spec.ios.deployment_target = '10.0'
+  spec.platform     = :ios, "10.0"
 
 
   spec.source       = { :git => "https://github.com/shichuanyang/AdvBiddingSuppliers.git", :tag => spec.version.to_s }
